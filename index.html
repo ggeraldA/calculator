@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="container">
+        <header id="header">
+          <h2>Calculator.</h2>
+        </header>
+        <!--===================GG=========================-->
+        <form class="appgg" name="calculator">
+            <input type="textfield" name="answer" value="" autocomplete="off" readonly>
+            <br>
+            <input type="button" value="7" onclick="document.calculator.answer.value+='7'" class="number">
+            <input type="button" value="8" onclick="document.calculator.answer.value+='8'" class="number">
+            <input type="button" value="9" onclick="document.calculator.answer.value+='9'" class="number">
+            <input type="button" value="+" onclick="document.calculator.answer.value+='+'" class="operadores">
+            <br>
+            <input type="button" value="4" onclick="document.calculator.answer.value+='4'" class="number">
+            <input type="button" value="5" onclick="document.calculator.answer.value+='5'" class="number">
+            <input type="button" value="6" onclick="document.calculator.answer.value+='6'" class="number">
+            <input type="button" value="-" onclick="document.calculator.answer.value+='-'" class="operadores">
+            <br>
+            <input type="button" value="1" onclick="document.calculator.answer.value+='1'" class="number">
+            <input type="button" value="2" onclick="document.calculator.answer.value+='2'" class="number">
+            <input type="button" value="3" onclick="document.calculator.answer.value+='3'" class="number">
+            <input type="button" value="x" onclick="document.calculator.answer.value+='*'" class="operadores">
+            <br>
+            <input type="button" value="0" onclick="document.calculator.answer.value+='0'" class="number">
+            <input type="reset" value="C" class="white">
+            <input type="button" value="=" onclick="document.calculator.answer.value=eval(document.calculator.answer.value)" class="operadores">
+            <input type="button" value="/" onclick="document.calculator.answer.value+='/'" class="operadores">
+            <!--==================gg==================-->
+        </form>
+    </section> 
+</body>
+</html>

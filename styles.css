@@ -1,0 +1,101 @@
+/*<!--===================GG=========================-->*/
+:root{
+    /*<!--===========BACKGROUND -  COLORS==============-->*/
+    --primer-gradient: rgb(100, 139, 155) 30%;
+    --segundo-gradient: rgb(115, 207, 163) 70%; 
+    /*<!--===========TITLE==============-->*/
+    --title-color: deepskyblue;
+    /*<!--===========CONTAINER==============-->*/
+    --primary-color: rgb(58, 164, 206) 30%;
+    --secondary-color: rgb(54, 212, 136) 70%;
+    --dark-xd: black;
+    /*<!--===========BOTONES==============-->*/
+    --first: rgba(153, 204, 164, 0.5);
+    --second: rgb(137, 190, 219);
+    --third: rgba(241, 203, 198, 0.5);
+    --fourth: rgb(212, 143, 143);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+    background: 
+    linear-gradient(55deg, 
+    var(--primer-gradient),
+    var(--segundo-gradient));
+}
+#header{
+    background-color: var(--title-color);
+    border-radius: 50px;
+    width: 70%;
+    margin: 1%;
+    padding: 0.3%;
+}
+#container{
+    background: linear-gradient(55deg, 
+    var(--primary-color),
+    var(--secondary-color));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.appgg{
+    border-bottom: 2px solid var(--dark-xd);
+    border-left: 2px solid var(--dark-xd);
+    border-radius: 20px;
+    line-height: normal;
+    height: 400px;
+    width: 300px;
+}
+.appgg input[type=textfield] {
+    border: none;
+    height: 70px;
+    width: 298px;
+    cursor: default;
+    padding: 15px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    font-size: 40px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px 20px 0 0;
+}
+.appgg input[type=button], input[type=reset] {
+    width: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 18px;
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100% ;
+}
+.numeros{
+    background-color: white;
+}
+.operadores {
+    background: 
+    linear-gradient(20deg,
+    var(--first),
+    var(--second));
+}
+.white {
+    background: 
+    linear-gradient(20deg, 
+    var(--third), 
+    var(--fourth));
+}
+@media all and (max-width:400px) {
+    #container{
+        justify-content: center;
+    }
+}
+@media all and (max-width:728px) {
+    #container{
+        justify-content: center;
+    }
+}
+/*<!--==================gg==================-->*/
